@@ -93,7 +93,7 @@
 
 @media all and (max-width: 1272px){
     .hero-section{    
-        background-image: url(imgs/ENERGIA\ DAS\ MARÉS.png);
+        background-image: url(/imgs/energia-das-mares.png);
 }
 }
 
@@ -109,7 +109,3 @@
         margin-top: -12px;
     }
 }
-
-
-
-
