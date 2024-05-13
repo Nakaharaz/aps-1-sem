@@ -7,123 +7,62 @@
     box-sizing: border-box;
     
 }
-body
-{
-    background-color: #d9e7f0;
-}
 
-nav
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    background-color: #136ea0;
-    overflow: hidden;
-    width: 90px;
-    transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(255,255,255,0.1);
-    z-index: 1;
-}
-
-.logo
-{
-    text-align: center;
-    display: flex;
-    transition: all 0.5s ease;
-    margin: 10px 0 0 0px;
-}
-
-.logo img
-{
-    width:7vh;
-    margin-left: 10px;
-}
-
-.logo span
-{
-    font-weight: bold;
-    padding-left: 15px;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  main {
+    margin-top: 5%;
+  } 
+  
+  .login-button {
+    background-color: #1f67b3;
+    color: white;
+    border-radius: 50px;
     font-size: 14px;
-    text-transform: uppercase;
-}
-
-.a
-{
-    position: relative;
-    color: rgba(255,255,255,255);
-    font-size: 20px;
-    display: table;
-    width: 300px;
-    padding: 10px;
-}
-
-.fas
-{
-    position: relative;
-    text-align: center;
-    height: 40px;
-    width: 70px;
-    top: 14px;
-    font-size: 20px;
-}
-
-.nav-item
-{
-    position: relative;
-    top: 12px;
-    margin-left: 12px;
-}
-
-.a:hover
-{
-    background-color: #006298;
-}
-
-nav:hover
-{
-    width: 280px;
-    transition: all 0.5s ease;
-}
-
-
-button
-{
-    position: absolute;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 1px;
+    padding: 8px 20px;
     text-decoration: none;
-    color: #2f71a8;
-    background: white;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid ;
-    border-radius: 10px;
-    padding: 5px 15px;
+    transition: 0.3s background-color;
+  }
+  
+  .navbar {
+    height: 85px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 52px 24px 52px 24px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+  
+  
+@media (max-width: 991px) {
+  .login-button {
+    margin-left: 50%;
+  }
 }
 
-button:hover {
-    scale: 1.05;
+@media (max-width: 450px) {
+  .login-button {
+    margin-left: 35%;
+  }
 }
 
-.doacao1
-{
-    width: 400px;
-    position:absolute;
-    margin-left: -15%;
-    margin-top: 5%;    
+@media (max-width: 357px) {
+  .login-button {
+    margin-left: 10%;
+  }
 }
 
-.divtitu
-{
-    margin-left:45%;
-    margin-top:10%;
-    
-}
-
-.titu
-{
-    font-size: 50px;
+@media (max-width: 768px) {
+   .card{
+    width: 5%;
+  }
 }
