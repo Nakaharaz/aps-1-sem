@@ -8,6 +8,11 @@ main {
   margin-top: 5%;
 } 
 
+.background-color
+{
+  background-color:#012E40;
+}
+
 .login-button {
   background-color: #1f67b3;
   color: white;
@@ -39,7 +44,7 @@ main {
 }
 
 .login-button:hover {
-  background-color: #2080e8;
+  background-color: #1c76d6;
 }
 
 .navbar-toggler {
@@ -60,7 +65,7 @@ main {
 
 .nav-link:hover,
 .nav-link:active {
-  color: blue;
+  color:  #1c76d6;
 }
 
   .nav-link::before {
@@ -69,7 +74,7 @@ main {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #2080e8;
+    background-color:#1c76d6;
     visibility: hidden;
     transition: 0, 3s ease-in-out;
   }
@@ -104,12 +109,6 @@ main {
   }
 }
 
-.concientizacao
-{
-  position: absolute;
-  display: inline-block;
-}
-
 .texto
 {
   margin-top: 6%;
@@ -128,4 +127,15 @@ main {
 
 .projeto-button:hover {
   background-color: #2080e8;
+}
+
+.img-fluid
+{
+  border-radius: 12px;
+}
+
+@media (max-width: 320px) {
+  .img-fluid {
+    width: 120%;
+  }
 }
