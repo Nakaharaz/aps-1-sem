@@ -1,0 +1,151 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+main {
+    margin-top: 5%;
+  } 
+  
+  .login-button {
+    background-color: #1f67b3;
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  .navbar {
+    height: 85px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 52px 24px 52px 24px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+  
+  
+  @media (max-width: 991px) {
+    .login-button {
+      margin-left: 50%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .login-button {
+      margin-left: 35%;
+    }
+  }
+  
+  @media (max-width: 357px) {
+    .login-button {
+      margin-left: 10%;
+    }
+  }
+
+.form-group
+{   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px 20px 20px 20px;
+    transform: translate(-50%, -50%);    
+    background-color: white;
+    padding: 5%;
+    display: grid;
+    place-items: center;
+    
+}
+
+.form-group h2 
+{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    
+}
+
+.input-box
+{
+    left: -25%;
+    position: relative;
+    width: 150%;
+    height: 50px;
+    border-bottom: 2px solid #1f67b3;
+    margin: 35px 0;
+}
+
+.input-box input
+{
+    width: 120%;
+    height: 120%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box label
+{
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -5px;
+}
+
+.input-box input:focus::placeholder
+{
+    color: transparent;
+    transition: .2s;
+}
+
+.login-button {
+    margin-top: 5%;
+    background-color: #1f67b3;
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  @media (max-width: 549px) {
+    .input-box {
+        width: 120%;
+        left: -10%;
+        }
+    } 
+    @media (max-width: 549px) {
+    .input-box input {
+    width: 90%;
+        }
+    }
+
+    @media (max-width: 549px) {
+    .input-box label {
+        left: 2px;
+        }
+    }
+
+    @media (max-width: 549px) {
+        .form-group h2  {
+            font-size: 45px;
+            }
+        }
