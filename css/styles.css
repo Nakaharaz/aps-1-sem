@@ -57,7 +57,6 @@ main {
   outline: none;
 }
 
-
 .nav-link:hover,
 .nav-link:active {
   color: #1c76d6;
@@ -85,6 +84,11 @@ main {
   visibility: visible;
 }
 
+.nav-link:hover::before,
+.nav-link:active::before {
+  width: 100%;
+  visibility: visible;
+}
 
 @media (max-width: 991px) {
   .login-button {
