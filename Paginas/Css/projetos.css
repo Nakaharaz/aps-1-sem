@@ -118,3 +118,9 @@ main {
 .projeto-button:hover {
   background-color: #2080e8;
 }
+
+img {
+  border-radius: 13px;
+  max-height: 350px;
+  max-width: 200px;
+}
