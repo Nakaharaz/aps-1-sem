@@ -1,31 +1,264 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p class="col-md-7 fs-3">Vamos se precaver de acontecimentos infelizes que pode deixar diversas pessoas sem energia, que ocasionam problemas como:</p>
-            <ul class="fs-4">
-              <li>Falta refrigeração de alimentos;</li>
-              <li>Deterioração economica de uma cidade;</li>
-              <li>Interrupção do acesso à telefonia (móvel e fixa);</li>
-              <li>Sobrecarga da rede elétrica;</li>
-              <li>Paralização de serviços de saude.</li>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Waves</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Css/contato.css" />
+    <script
+      src="https://kit.fontawesome.com/41e2b96808.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="sticky bg-light navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <img class="logo" src="./imgs/logo-removebg-preview.png" />
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" aria-current="page" href="/"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-lg-2"
+                    aria-current="page"
+                    href="/Paginas/doar.html"
+                    >Doar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-lg-2"
+                    aria-current="page"
+                    href="/Paginas/projetos.html"
+                    >Projetos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 link-active" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="/Paginas/Usuario.html" class="login-button">Login</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <br /><br />
+
+    <div class="pt-5 bg-primary text-white">
+      <div class="container-fluid py-5 px-5">
+        <h1 class="display-5 fw-bold">Entre em contato!</h1>
+        <p class="col-md-6 fs-4">
+          Saiba como você pode ajudar diversas vidas à ter uma melhor
+          estabilidade e melhorar a produção de energia limpa
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid py-5 px-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="fw-bold">Redes sociais</h1>
+          <p>
+            Fique atualizado com nossas últimas iniciativas e projetos. Siga-nos
+            nas redes sociais e junte-se a nossa comunidade em prol de um futuro
+            sustentável.
+          </p>
+          <div class="d-flex justify-content-start">
+            <a
+              href="https://www.instagram.com"
+              class="me-3 text-primary"
+              target="_blank"
+            >
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              class="me-3 text-primary"
+              target="_blank"
+            >
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              class="text-primary"
+              target="_blank"
+            >
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input
+              type="text"
+              name="fullName"
+              ]
+              id="userFullName"
+              class="form-control"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Seu e-mail</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="numero" class="form-label"
+              >Seu número de telefone</label
+            >
+            <input
+              type="tel"
+              name="numero"
+              class="form-control"
+              placeholder=""
+              required
+            />
+          </div>
+          <!-- Script no final do site -->
+          <button onclick="thankYou()" type="submit" class="btn btn-primary">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-0 m-0">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58953.061347018745!2d-47.449928877763554!3d-22.55791234224801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c87e183312f7fb%3A0xeb8db79604e301c2!2sUNIP%20Limeira%20-%20Universidade%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1715686806340!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark px-5 py-4">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="./imgs/logo-dark.jpg"
+            alt=""
+            width="75px"
+            class="img-fluid align-start mb-2"
+          />
+          <p class="text-light text-start">
+            Waves é uma ONG dedicada a aproveitar o poder da energia maremotriz
+            para proporcionar energia renovável e sustentável a famílias
+            carentes. Nosso compromisso é com um futuro mais verde e inclusivo.
+          </p>
+        </div>
+        <div class="col-sm-4 text-light">
+          <h4>Navegação</h4>
+          <nav class="flex-column align-items-start navbar-vertical">
+            <ul class="navbar-nav text-light flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Paginas/doar.html">Doar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Paginas/projetos.html">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contato</a>
+              </li>
             </ul>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
->>>>>>> 2810b710e5df59313397ddbba339c5e80d831c48
+          </nav>
+        </div>
+        <div class="col-sm-4 text-light">
+          <h4>Redes Sociais</h4>
+          <a
+            href="https://www.twitter.com"
+            class="text-primary"
+            target="_blank"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            class="text-primary"
+            target="_blank"
+          >
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            class="text-primary"
+            target="_blank"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function thankYou() {
+        userName = document.getElementById("userFullName").value;
+        window.alert(
+          `Obrigado pelo envio ${userName}! Em breve um especialista vai entrar em contato!`
+        );
+      }
+    </script>
+  </body>
 </html>

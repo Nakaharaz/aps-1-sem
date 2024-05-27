@@ -6,11 +6,10 @@
 
 main {
   margin-top: 5%;
-} 
+}
 
-.background-color
-{
-  background-color:#012E40;
+.background-color {
+  background-color: #012e40;
 }
 
 .login-button {
@@ -58,38 +57,32 @@ main {
   outline: none;
 }
 
-.nav-link {
-  color: #000;
-  position: relative;
-}
-
 .nav-link:hover,
 .nav-link:active {
-  color:  #1c76d6;
+  color: #1c76d6;
 }
 
-  .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color:#1c76d6;
-    visibility: hidden;
-    transition: 0, 3s ease-in-out;
-  }
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1c76d6;
+  visibility: hidden;
+  transition: 0, 3s ease-in-out;
+}
 
-  .navbar {
-    height: fit-content;
-    padding: 10px;
-  }
+.navbar {
+  height: fit-content;
+  padding: 10px;
+}
 
-  .nav-link:hover::before,
-  .nav-link:active::before {
-    width: 100%;
-    visibility: visible;
-  }
-
+.nav-link:hover::before,
+.nav-link:active::before {
+  width: 100%;
+  visibility: visible;
+}
 
 @media (max-width: 991px) {
   .login-button {
@@ -109,13 +102,11 @@ main {
   }
 }
 
-.texto
-{
+.texto {
   margin-top: 6%;
 }
 
-.projeto-button
-{
+.projeto-button {
   background-color: #1f67b3;
   color: white;
   border-radius: 50px;
@@ -129,8 +120,7 @@ main {
   background-color: #2080e8;
 }
 
-.img-fluid
-{
+.img-fluid {
   border-radius: 12px;
 }
 
@@ -140,7 +130,5 @@ main {
   }
 }
 
-.btn
-{
-  
+.btn {
 }
