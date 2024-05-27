@@ -6,18 +6,17 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/9971c88a34.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="sticky bg-light navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <img class="logo" src="./assets/imgs/logo-removebg-preview.png" />
+        <img class="logo" src="imgs/logo-removebg-preview.png" />
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
@@ -27,15 +26,22 @@
             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" id="active" aria-current="Início" href="#">Inicio</a>
+                <a class="nav-link mx-lg-2" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+                  Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="./Paginas/doar.html">Doar</a>
+                <a class="nav-link mx-lg-2" href="Paginas/doar.html"><i class="fa-solid fa-hand-holding-dollar"></i>
+                  Doar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="./Paginas/projetos.html">Projetos</a>
+                <a class="nav-link mx-lg-2" href="Paginas/contato.html"><i class="fa-solid fa-phone"></i> Contato</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="./Paginas/contato.html">Contato</a>
+                <a class="nav-link mx-lg-2" aria-current="page" href="Paginas/projetos.html"><i
+                    class="fa-solid fa-briefcase"></i> Projetos</a>
               </li>
             </ul>
           </div>
@@ -49,7 +55,7 @@
     </nav>
   </header>
   <main>
-    <div class="p-5 bg-primary rounded-3">
+    <div class="p-3 bg-primary rounded-2">
       <div class="container-fluid py-5 text-light">
         <h1 class="display-5 fw-bold">Energia das Marés</h1>
         <p class="col-md-7 fs-2">
@@ -59,13 +65,14 @@
         </p>
         <button class="btn btn-lg btn-light" type="button">Quero Ajudar!</button>
       </div>
+
     </div>
     <div class="container-fluid text-right p-5 row">
       <div class="col-sm-6">
-        <img src="assets/imgs/img-impactante (2).jpg" class="img-fluid" alt="projetos" width="100%">
+        <img src="assets/imgs/img-impactante (2).jpg" class="img-fluid" alt="projetos" width="120%">
       </div>
       <div class="col-sm-6">
-        <h1 class="mb-4 fw-bold mt-3">Nos ajude a evitar tragédias</h1>
+        <h1 class="mb-4 fw-bold mt-3">Evitaremos tragédias</h1>
         <p class="fs-5">
           Vamos se precaver de acontecimentos infelizes que pode deixar diversas pessoas sem energia, que ocasionam
           problemas como:
@@ -100,20 +107,60 @@
             projetos</button></a>
       </div>
     </section>
-    <section class="container-fluid row p-5">
-      <div class="col-sm-6 cta-text">
-        <h1>Nos ajude a continuar transformando vidas e gerando impacto para milhares de famílias</h1>
+    <div class="container-fluid text-center">
+      <h2 class="elementor-heading-title elementor-size-default">Nos ajude a continuar<br>transformando vidas e gerando
+        impacto<br>para milhares de famílias</span></h2>
+      <div class="text-center pt-4">
+        <a href="Paginas/doar.html"><button class="botao" type="button"><i class="fa-solid fa-hand-holding-dollar"></i>
+            Doar</button></a>
       </div>
-      <div class="col-sm-6">
-        <button
-          type="button"
-          class="btn btn-primary btn-lg"
-        >
-          Saiba mais
-        </button>
-        
+    </div>
+    <br>
+    <br>
+    <footer class="container-fluid bg-dark px-5 py-4">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="imgs/WhatsApp_Image_2024-05-26_at_17.18.00_36d685fd-removebg-preview copy.png" alt="" width="75px"
+            class="img-fluid align-start mb-2" />
+          <p class="text-light text-start">
+            Waves é uma ONG dedicada a aproveitar o poder da energia maremotriz
+            para proporcionar energia renovável e sustentável a famílias
+            carentes. Nosso compromisso é com um futuro mais verde e inclusivo.
+          </p>
+        </div>
+        <div class="col-sm-4 text-light">
+          <h4>Navegação</h4>
+          <nav class="flex-column align-items-start navbar-vertical">
+            <ul class="navbar-nav text-light flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Paginas/doar.html">Doar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-4 text-light">
+          <h4>Redes Sociais</h4>
+          <a href="https://www.twitter.com" class="text-primary" target="_blank">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com" class="text-primary" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com" class="text-primary" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
       </div>
-    </section>
+    </footer>
 
     <!-- Footer -->
     <footer class="container-fluid bg-dark px-5 py-4">

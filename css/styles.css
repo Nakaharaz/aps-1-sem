@@ -9,7 +9,7 @@ main {
 }
 
 .background-color {
-  background-color: #012e40;
+  background-color: #012E40;
 }
 
 .login-button {
@@ -84,6 +84,12 @@ main {
   visibility: visible;
 }
 
+.nav-link:hover::before,
+.nav-link:active::before {
+  width: 100%;
+  visibility: visible;
+}
+
 @media (max-width: 991px) {
   .login-button {
     margin-left: 50%;
@@ -124,9 +130,41 @@ main {
   border-radius: 12px;
 }
 
+.imagem {
+  border-radius: 12px;
+}
+
 @media (max-width: 320px) {
-  .img-fluid {
+  .imagem {
     width: 120%;
+  }
+}
+
+.botao {
+  width: 150px;
+  font-size: 30px;
+  height: 60px;
+  /* you can adjust the height as per your requirement */
+  background-color: #2080e8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #1C6FC7;
+}
+
+@media (max-width: 577px) {
+  .imagem {
+    width: 150%;
+  }
+}
+
+@media (max-width: 1015px) {
+  .fs-5 {
+    position: inherit;
   }
 }
 
