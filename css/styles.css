@@ -130,5 +130,6 @@ main {
   }
 }
 
-.btn {
+.nav-item > #active {
+  color: #0d6efd;
 }

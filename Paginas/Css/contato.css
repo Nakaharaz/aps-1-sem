@@ -55,6 +55,10 @@ main {
 
 .nav-link:hover,
 .nav-link:active {
+  color: #0d6efd !important;
+}
+
+.nav-item > #active {
   color: #0d6efd;
 }
 
@@ -72,12 +76,6 @@ main {
 .navbar {
   height: fit-content;
   padding: 10px;
-}
-
-.nav-link:hover::before,
-.nav-link:active::before {
-  width: 100%;
-  visibility: visible;
 }
 
 @media (max-width: 991px) {
