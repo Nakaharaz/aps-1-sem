@@ -1,127 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Wave</title>
-    <link rel="stylesheet" href="Css/donation.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Wave | Doações</title>
+  <link rel="stylesheet" href="Css/doar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/9971c88a34.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    
-    <header>
-        <nav class="sticky bg-light navbar navbar-expand-lg fixed-top">
-          <div class="container-fluid">
-            <img
-              class="logo img-fluid"
-              src="imgs/logo-removebg-preview.png"
-            />
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" aria-current="page" href="enzoversion.html" onclick="history.go(-1); return false;">Inicio</a
-                    >
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle mx-lg-2"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Doar
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Único</a></li>
-                      <li><a class="dropdown-item" href="#">Planos</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="#">Contato</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" aria-current="page" href="projetos.html">Projetos</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <a href="#" class="login-button">Login</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <header class="pb-5">
+    <nav class="sticky bg-light navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img class="logo" src="imgs/logo-removebg-preview.png" />
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        </nav>
-      </header>
-      <div class="container p-5 my-5">
-        <div class="row" style="margin-top: 5%;">
-          <div class="card text-center" style="width: 30%; ">
-            <div class="card-body">
-              <h5 class="card-title">Mensal</h5>
-              <p class="card-text">R$30.00</p>
-              <p class="card-text">Com o plano mensal poderá financiar projetos iniciais e ganhar 1 brinde mensalmente</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
+                  Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="Paginas/doar.html"><i class="fa-solid fa-hand-holding-dollar"></i>
+                  Doar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="Paginas/contato.html"><i class="fa-solid fa-phone"></i> Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="Paginas/projetos.html"><i
+                    class="fa-solid fa-briefcase"></i> Projetos</a>
+              </li>
+            </ul>
           </div>
-          <div class="card text-center" style="width: 30%; margin: 0% 2% 0% 2%;">
-                <div class="card-body">
-                  <h5 class="card-title">Semestral</h5>
-                  <p class="card-text">R$120.00</p>
-                  <p class="card-text">O plano(pacote) Semestral te permite financiar projetos avançados e ganhar 2 brindes mensalmente</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          <div class="card text-center" style="width: 30%;">
-            <div class="card-body">
-              <h5 class="card-title">Anual</h5>
-              <p class="card-text">R$280.00</p>
-              <p class="card-text">Com o plano mais vendido você poderá financiar qualquer projeto alem de conversar diretamente com supervisores de projetos da Wave e ganhará 3 brindes mensalmente</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
+        </div>
+        <a href="Paginas/Usuario.html" class="login-button">Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <section class="container pt-5">
+    <h2 class="text-center mb-4 pt-5">Planos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm text-center">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Base</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R$10.00 <small class="text-muted">/ Mensal</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="card-text">Com o plano base poderá financiar Projetos direcionados a familias ou manutenção de
+                maquinas (1 ano de assinante garante 1 brinde)</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Assinar</button>
           </div>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm text-center">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Herói</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R$120.00 <small class="text-muted">/Anual</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Com o plano mais vendido você financiará qualquer projeto, conversar com tais supervisores e ganhar 3
+                brindes</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Assinar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm text-center">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">intermediario</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R$15.00 <small class="text-muted">/ Mensal</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Permite financiar qualquer projeto mais </li>
+              <li>Conversar periodicamente (semestral) com os donos do projeto</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Assinar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="container pt-5 pb-5">
+    <h2 class="text-center mb-4 pt-5">Doação unica</h2>
+    <form action="theo.panella@gmail.com" method="post" enctype="test/plain">
+      <div class="mb-3 form-check">
+        <h5 class="meu">Selecione apenas 1</h5>
+        <input type="checkbox" class="form-check-input" name="Check1">
+        <label class="form-check-label" for="exampleCheck1">Pix</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" name="Check2">
+        <label class="form-check-label" for="exampleCheck1">cartão</label>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">Email que ira enviar o pedido de doação</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Valor</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="R$" required>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Concordo com os termos</label>
+        <a href="https://policies.google.com/terms?hl=pt-BR">Termos de uso</a>
+      </div>
+      <button type="submit" class="btn btn-primary" value="enviar">Enviar</button>
+      <button type="reset" class="btn btn-primary" value="Limpar">Limpar</button>
+    </form>
+  </section>
+  <footer class="container-fluid bg-dark px-5 py-4">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="imgs/WhatsApp_Image_2024-05-26_at_17.18.00_36d685fd-removebg-preview copy.png" alt="" width="75px"
+          class="img-fluid align-start mb-2" />
+        <p class="text-light text-start">
+          Waves é uma ONG dedicada a aproveitar o poder da energia maremotriz
+          para proporcionar energia renovável e sustentável a famílias
+          carentes. Nosso compromisso é com um futuro mais verde e inclusivo.
+        </p>
+      </div>
+      <div class="col-sm-4 text-light">
+        <h4>Navegação</h4>
+        <nav class="flex-column align-items-start navbar-vertical">
+          <ul class="navbar-nav text-light flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Paginas/doar.html">Doar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-sm-4 text-light">
+        <h4>Redes Sociais</h4>
+        <a href="https://www.twitter.com" class="text-primary" target="_blank">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com" class="text-primary" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com" class="text-primary" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-      
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
